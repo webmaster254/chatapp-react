@@ -7,18 +7,21 @@
     margin: 0;
   }
   .chat-window .chat-header {
-    height: 45px;
+    display: flex;
+    height: 60px;
     border-radius: 6px;
-    background: #263238;
+    background: #2979FF;
     position: relative;
     cursor: pointer;
+    align-items: center;
   }
   .chat-window .chat-header p {
-    display: block;
+    display: flex;
     padding: 0 1em 0 2em;
     color: #fff;
     font-weight: 700;
     line-height: 45px;
+    justify-content: center;
   }
   
   .chat-window .chat-body {
@@ -138,4 +141,22 @@
   }
   .hide {
     opacity: 0 !important;
+  }
+  .onlineIcon{
+    margin-right: 5%;
+   
+  }
+  .leftInnerContainer{
+    flex:0.5;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 50%;
+    color: wheat;
+  }
+  .rightInnerContainer{
+    display: flex;
+    flex: 0.5;
+    justify-content: flex-end;
+    margin-right: 5%;
   }

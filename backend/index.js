@@ -19,7 +19,8 @@ io.on("connection", (socket) => {
 
   socket.on("join_channel", ({username,channel}) => {
     socket.join(channel);
-    console.log(`User with ID: ${socket.id} joined channel: ${channel}`);
+    socket.join(username);
+    console.log(`User with ID: ${username} joined channel: ${channel}`);
   });
 
   socket.on("send_message", (data) => {
